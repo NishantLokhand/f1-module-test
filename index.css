@@ -1,0 +1,549 @@
+/* //      B O D Y      // */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background: #000000;
+    font-family: 'Ruda', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:hover{
+    color: #F2C94C;
+}
+
+.container {
+    padding: 0 80px;
+}
+
+/* //        N  A  V    B A R     //    */
+
+nav {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 40px; */
+    font-size: 15px;
+    position: relative;
+    height: 111px;
+    
+}
+.logo {
+    position: absolute;
+    width: 333px;
+height: 51px;
+left: 20px;
+top: 30px;
+    
+    font-family: 'Ruda';
+font-style: normal;
+font-weight: 700;
+font-size: 29px;
+line-height: 0px;
+    
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;
+    
+    border: 1px solid #000000;
+}
+.nav-items {
+    display: flex;
+    flex-wrap: row wrap;
+    gap: 35px;
+    position: absolute;
+    /* width: 159px; */
+    height: 28px;
+    left: 27%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    top: 45px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0px;
+    /* or 0% */
+    
+    
+    color: #FFFFFF;
+}
+
+.nav-icons {
+    display: flex;
+    flex-wrap: row wrap;
+    gap: 30px;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 62.33px;
+    height: 43.12px;
+    top: 35px;
+    /* padding-top: 2px; */
+    left: 85%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* or 0% */
+    display: flex;
+    color: #FFFFFF;
+}
+
+nav>div>li {
+    list-style-type: none;
+}
+
+.toggle_btn {
+    font-size: 25px;
+    color: white;
+}
+
+.btn {
+    background: black;
+    display: none;
+    border: none;
+    left: 80%;
+}
+
+.dropdown_menu {
+    position: absolute;
+    z-index: 1;
+    opacity: 90%;
+    height: 0;
+    width: 50%;
+    top: 60px;
+    overflow: hidden;
+    background: black;
+    backdrop-filter: blur(15px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu.open {
+    height: 100vh;
+}
+
+/* // M A I N // */
+
+.image>img {
+    min-width: 100%;
+    position: relative;
+}
+
+.cravings {
+    position: absolute;
+    max-width: 700px;
+
+    /* padding: 120px 0 0 40px; */
+    top: 250px;
+    left: 60px;
+    /* padding-left: 20px; */
+    z-index: 1;
+   
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+    left: 12%;
+    right: 20%;
+    width: 60%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.cravings>h1 {
+    display: flex;
+    position: relative;
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    width: 60%;
+}
+
+.cravings>p {
+    width: 60%;
+    padding-top: 25px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-family: 'Quattrocento';
+    font-style: normal;
+    border-top: 7px solid red;
+}
+
+/* //      S E C T I O N -1     // */
+
+.sect-1 {
+    align-items: center;
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    padding-top: 7vw;
+    text-align: center;
+}
+
+.sect-1>h1 {
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+    border-bottom: 4px solid red;
+}
+
+.sect-1-child {
+    display: flex;
+    margin: 5% auto;
+   
+
+    flex-wrap: row wrap;
+    padding-top: 30px;
+    gap: 30px;
+    
+    /* top: 1421px; */
+    
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    /* or 160% */
+    
+    letter-spacing: 0.09em;
+    
+    color: #FFFFFF;
+}
+.sect-1-child>p{
+    max-width: 600px;
+}
+
+.sect-1-child>img {
+        width: 400px; 
+    height: 350px;
+}
+
+.sect-1-child>p {
+    margin-top: 10px;
+    border-top: 2px solid red;
+    padding-top: 5px;
+    line-height: 1.5em;
+}
+
+
+/* //      S E C T I O N -2     // */
+
+.sect-2 {
+    padding: 40px 0px;
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.sect-2>h1 {
+    width: 30%;
+    text-align: center;
+    margin: 5% auto;
+    padding-bottom: 2px;
+    border-bottom: 4px solid red;
+    font-family: 'Quattrocento';
+    font-style: normal;
+  
+    
+}
+
+.sect-2>p {
+    padding: 30px 0 50px 0;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 2.5vw;
+    text-align: left;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+}
+
+.items {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+
+.items-left>img {
+    width: 100%;
+}
+
+.items-right>h3 {
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    align-items: center;
+    color: #F2C94C;
+}
+
+.items-right>p {
+    padding-top: 1vw;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    letter-spacing: 0.09em;
+}
+
+
+/* //      S E C T I O N -3     // */
+
+.sect-3 {
+    padding: 60px 0px;
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.find-us {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 100%;
+    padding-top: 30px;
+    gap: 30px;
+    
+}
+.find-left{
+    padding-top: 5vw;
+   
+   
+    align-items: center;
+    width: 40vw;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    letter-spacing: 0.09em;
+    padding-left: 0.7vw;
+}
+
+.find-right{
+    max-width: 685px;
+}
+
+#map{
+    max-width:100%;
+    width: 100%;
+}
+
+
+
+.sect-3>h1 {
+    width: 35%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+    border-bottom: 4px solid red;
+}
+
+.find-left>p {
+    padding-bottom: 30px;
+}
+
+.find-left>div i {
+    font-size: 20px !important;
+}
+
+.ph {
+    gap: 10px;
+}
+
+.location {
+    display: flex;
+    gap: 10px;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+/* //  F O O T E R   //  */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+}
+
+.foot-left{
+    margin-left: 10%;
+}
+.foot-left>img {
+    width: 150px;
+}
+.foot-right {
+    margin-right: 10%;
+}
+
+.foot-right a>i {
+    margin-right: 20%;
+    font-size: 20px;
+}
+
+.sms {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* //   MEDIA QUERRY  // */
+
+@media screen and (max-width: 960px) {
+
+    .nav-items,
+    .nav-icons {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+        left: 90%;
+        padding: 90%;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        font-size: 90%;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 714px) {
+
+    .sect-1-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sect-1-child>img {
+        max-width: 100%;
+    }
+
+    .image {
+        font-size: 70%;
+    }
+
+}
+
+@media screen and (max-width: 601px) {
+
+
+    .items-right>h3 {
+        /* color: #F2C94C; */
+        padding-bottom: 0;
+    }
+
+    .image {
+        display: flex;
+    }
+
+
+
+    nav {
+        padding: 20px 10px;
+    }
+
+    .cravings{
+        top: 80px;
+        left: 0px;
+    }
+
+    .cravings > p{
+        padding-top: 0;
+        font-size: 90%;
+        border-top: 2px solid red;
+}
+
+    .cravings > h1{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 784px) {
+
+    .find-us {
+        display: flex;
+        flex-direction: column;
+    }
+    .find-right{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    
+    .cravings{
+        top: 200px;
+        left: 0px;
+    }
+
+    .cravings > p{
+        padding-top: 0;
+        font-size: 90%;
+        border-top: 2px solid red;
+}
+
+    .cravings > h1{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    
+}
